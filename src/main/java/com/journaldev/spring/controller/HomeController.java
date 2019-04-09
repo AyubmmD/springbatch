@@ -34,7 +34,7 @@ public class HomeController {
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	public String user(@Validated User user, Model model) {
 		System.out.println("User Page Requested");
-		model.addAttribute("userName", "deployed from jenkins directly");
+		model.addAttribute("userName", "deployed from jenkins directly at night");
 		return "user";
 	}
 }
